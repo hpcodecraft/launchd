@@ -1,15 +1,15 @@
-<!-- Update homebrew formulae -->
+<!-- Update installed brews -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>me.hpcodecraft.brewupdate</string>
+  <string>me.hpcodecraft.brewupgrade</string>
 
   <key>ProgramArguments</key>
   <array>
     <string>/usr/local/bin/brew</string>
-    <string>update</string>
+    <string>upgrade</string>
   </array>
 
   <key>Nice</key>
@@ -18,7 +18,7 @@
   <key>StartCalendarInterval</key>
   <dict>
       <key>Minute</key>
-      <integer>00</integer>
+      <integer>15</integer>
       <key>Hour</key>
       <integer>11</integer>
   </dict>
@@ -27,9 +27,9 @@
   <true/>
 
   <key>StandardErrorPath</key>
-  <string>/tmp/brewupdate.err</string>
+  <string>/tmp/brewupgrade.err</string>
 
   <key>StandardOutPath</key>
-  <string>/tmp/brewupdate.log</string>
+  <string>/tmp/brewupgrade.log</string>
 </dict>
 </plist>

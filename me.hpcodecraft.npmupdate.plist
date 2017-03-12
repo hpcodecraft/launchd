@@ -1,3 +1,4 @@
+<!-- Update npm -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -27,7 +28,7 @@
       <key>Minute</key>
       <integer>00</integer>
       <key>Hour</key>
-      <integer>00</integer>
+      <integer>12</integer>
   </dict>
 
   <key>RunAtLoad</key>
@@ -37,6 +38,6 @@
   <string>/tmp/npmupdate.err</string>
 
   <key>StandardOutPath</key>
-  <string>/tmp/npmupdate.out</string>
+  <string>/tmp/npmupdate.log</string>
 </dict>
 </plist>

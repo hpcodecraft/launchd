@@ -1,15 +1,22 @@
-<!-- Update homebrew formulae -->
+<!-- Update globally installed npm modules -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>me.hpcodecraft.brewupdate</string>
+  <string>me.hpcodecraft.npmupdateglobal</string>
+
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key>
+    <string>/usr/local/bin/:$PATH</string>
+  </dict>
 
   <key>ProgramArguments</key>
   <array>
-    <string>/usr/local/bin/brew</string>
+    <string>/usr/local/bin/npm</string>
     <string>update</string>
+    <string>-g</string>
   </array>
 
   <key>Nice</key>
@@ -18,18 +25,18 @@
   <key>StartCalendarInterval</key>
   <dict>
       <key>Minute</key>
-      <integer>00</integer>
+      <integer>15</integer>
       <key>Hour</key>
-      <integer>11</integer>
+      <integer>12</integer>
   </dict>
 
   <key>RunAtLoad</key>
   <true/>
 
   <key>StandardErrorPath</key>
-  <string>/tmp/brewupdate.err</string>
+  <string>/tmp/npmupdateglobal.err</string>
 
   <key>StandardOutPath</key>
-  <string>/tmp/brewupdate.log</string>
+  <string>/tmp/npmupdateglobal.log</string>
 </dict>
 </plist>

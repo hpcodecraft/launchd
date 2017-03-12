@@ -1,15 +1,16 @@
-<!-- Update homebrew formulae -->
+<!-- Clean up homebrew cask downloads -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>me.hpcodecraft.brewupdate</string>
+  <string>me.hpcodecraft.brewcaskcleanup</string>
 
   <key>ProgramArguments</key>
   <array>
     <string>/usr/local/bin/brew</string>
-    <string>update</string>
+    <string>cask</string>
+    <string>cleanup</string>
   </array>
 
   <key>Nice</key>
@@ -18,7 +19,7 @@
   <key>StartCalendarInterval</key>
   <dict>
       <key>Minute</key>
-      <integer>00</integer>
+      <integer>30</integer>
       <key>Hour</key>
       <integer>11</integer>
   </dict>
@@ -27,9 +28,9 @@
   <true/>
 
   <key>StandardErrorPath</key>
-  <string>/tmp/brewupdate.err</string>
+  <string>/tmp/brewcaskcleanup.err</string>
 
   <key>StandardOutPath</key>
-  <string>/tmp/brewupdate.log</string>
+  <string>/tmp/brewcaskcleanup.log</string>
 </dict>
 </plist>
